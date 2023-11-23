@@ -32,7 +32,7 @@ class _SplashScreen extends ConsumerState<SplashScreen> with TickerProviderState
   @override
   Widget build(BuildContext context) {
     return FlutterSplashScreen(
-      duration: const Duration(milliseconds: 2000),
+      duration: const Duration(milliseconds: 2500),
       backgroundColor: Colors.white,
       onEnd: () {
         if (mounted) ref.read(routerProvider).pushReplacement(RouteInfo.login.fullPath);
