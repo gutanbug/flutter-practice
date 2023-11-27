@@ -1,6 +1,12 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:taba/routes/router_path.dart';
+import 'package:taba/routes/router_provider.dart';
 import 'package:taba/screen/main/home/home_screen.dart';
+import 'package:taba/screen/main/profile/profile_screen.dart';
+import 'package:taba/screen/main/upload/image_upload_screen.dart';
 
 import '../../modules/orb/components/components.dart';
 
@@ -26,12 +32,13 @@ class MainScreen extends ConsumerWidget {
         },
         children: const [
           HomeScreen(),
-          // ProfileScreen(),
+          ProfileScreen(),
+          ImageUploadScreen(),
         ],
       ),
       bottomNavigationBar: OrbBottomNavigationBar(
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "홈"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "홈",),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "내 정보"),
         ],
         onIndexChanged: (value) {
