@@ -42,6 +42,12 @@ class RouteInfo {
     path: 'profile',
     fullPath: '${main.fullPath}/profile',
   );
+  //imageUpload
+  static RouteData imageUpload = RouteData(
+    name: 'imageUpload',
+    path: 'imageUpload',
+    fullPath: '${main.fullPath}/imageUpload',
+  );
   //login
   static RouteData login = const RouteData(
     name: 'login',

@@ -7,12 +7,13 @@ import 'package:taba/screen/login/login_screen.dart';
 import 'package:taba/screen/login/sign_up/signup_screen.dart';
 import 'package:taba/screen/main/home/home_screen.dart';
 import 'package:taba/screen/main/profile/profile_screen.dart';
+import 'package:taba/screen/main/upload/image_upload_screen.dart';
 import 'package:taba/screen/splash/splash_screen.dart';
 
 import '../screen/main/main_screen.dart';
 
 final Provider<GoRouter> routerProvider = Provider<GoRouter>(
-      (ref) {
+  (ref) {
     return GoRouter(
       initialLocation: RouteInfo.splash.fullPath,
       routes: [
@@ -31,6 +32,10 @@ final Provider<GoRouter> routerProvider = Provider<GoRouter>(
             GoRoute(
               path: RouteInfo.profile.path,
               builder: (context, state) => ProfileScreen(key: state.pageKey),
+            ),
+            GoRoute(
+              path: RouteInfo.imageUpload.path,
+              builder: (context, state) => ImageUploadScreen(key: state.pageKey),
             ),
           ],
         ),
