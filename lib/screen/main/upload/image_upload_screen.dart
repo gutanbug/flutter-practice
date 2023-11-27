@@ -14,7 +14,13 @@ class _ProfileScreen extends ConsumerState<ImageUploadScreen> {
   @override
   Widget build(BuildContext context) {
     return OrbScaffold(
-
+      orbAppBar: OrbAppBar(
+        title: '이미지 업로드',
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Text('이미지 업로드'),
+      ),
     );
   }
 

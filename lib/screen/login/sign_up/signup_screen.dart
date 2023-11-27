@@ -43,7 +43,6 @@ class _SignUpScreen extends ConsumerState<SignUpScreen> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     nicknameController.dispose();
     super.dispose();
   }
@@ -57,7 +56,6 @@ class _SignUpScreen extends ConsumerState<SignUpScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     final ThemeData themeData = Theme.of(context);
     return OrbScaffold(
       body: Form(
